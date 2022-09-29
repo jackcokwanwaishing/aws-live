@@ -33,16 +33,16 @@ def about():
 def addresult():
     return render_template('AddEmp.html')
 
-@app.route("/getresult", methods=['POST'])
+@app.route("/getemp", methods=['POST'])
 def getresult():
     return render_template('empData.html')
 
-@app.route("/delresult", methods=['POST'])
+@app.route("/deleteemp", methods=['POST'])
 def delresult():
     return render_template('deleteResult.html')
 
 
-@app.route("/addresult", methods=['GET','POST'])
+@app.route("/addResult", methods=['GET','POST'])
 def AddEmp():
     emp_id = request.form['emp_id']
     first_name = request.form['first_name']
@@ -92,7 +92,7 @@ def AddEmp():
     return render_template('addResult.html', name=emp_name)
 
 
-@app.route("/getemp",methods=['GET','POST'])
+@app.route("/getresult",methods=['GET','POST'])
 def Employee():
     
     s3 = boto3.resource('s3')
@@ -131,7 +131,7 @@ def Employee():
         return("No User Have Been Found")
 
 
-@app.route("/deleteemp",methods=['GET','POST'])
+@app.route("/delresult",methods=['GET','POST'])
 def delEmployee():
     
     
