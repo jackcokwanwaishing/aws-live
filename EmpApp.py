@@ -33,11 +33,11 @@ def about():
 def addresult():
     return render_template('AddEmp.html')
 
-@app.route("/getemp", methods=['POST'])
+@app.route("/getemp", methods=['GET','POST'])
 def getresult():
     return render_template('findEmp.html')
 
-@app.route("/deleteemp", methods=['POST'])
+@app.route("/deleteemp", methods=['GET','POST'])
 def delresult():
     return render_template('deleteEmp.html')
 
