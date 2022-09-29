@@ -11,14 +11,15 @@
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/css/style.css" rel="stylesheet">
+   <link href="{{ url_for('static', filename='animate.min.css')}}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='bootstrap.min.css')}}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='bootstrap-icons.css')}}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='boxicons.min.css')}}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='glightbox.min.css')}}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='remixicon.css')}}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='swiper-bundle.min.css')}}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='style.css')}}" rel="stylesheet" />
+    <link href="{{ url_for('static', filename='style.css')}}" rel="stylesheet" />
 
  
 </head>
@@ -29,20 +30,22 @@
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo me-auto"><a href="index.html">3K</a></h1>
+      <h1 class="logo me-auto"><a href="/">3K</a></h1>
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="team.html"><span>About us</span></a></li>
-          <li class="dropdown"><a href="#">Action<i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="AddEmp.html">Add Employee</a></li>
-              <li><a href="findEmp.html">Search Employee</a></li>
-              <li><a href="deleteEmp.html">Delete Employee</a></li>
-            </ul></li>
-             
-          <li><a href="findEmp.html" class="getstarted">Employee</a></li>
+          <li><a href="/">Home</a></li>
+              <li><a href="/team">Team</a></li>
+              <li class="dropdown">
+                  <a href="#">Action<i class="bi bi-chevron-down"></i></a>
+                  <ul>
+                      <li><a href="/addemp">Add Employee</a></li>
+                      <li><a href="/getemp">Search Employee</a></li>
+                      <li><a href="/deleteemp">Delete Employee</a></li>
+                  </ul>
+              </li>
+
+              <li><a href="/getemp" class="getstarted">Employee</a></li>
         </ul> 
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -159,11 +162,11 @@
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="team.html">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="addResult.html">Add Employee</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="findEmp.html">Search Employee</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="findEmp.html">Employee</a></li>
+               <li><i class="bx bx-chevron-right"></i> <a href="/">Home</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="/deleteemp">Delete Employee</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="/addemp">Add Employee</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="/getemp">Search Employee</a></li>
+                <li><i class="bx bx-chevron-right"></i> <a href="/getemp">Employee</a></li>
             </ul>
           </div>
 
