@@ -125,7 +125,7 @@ def Employee():
                 custombucket,
                 emp_image_file_name_in_s3)
             cursor.close()
-            return render_template('emp_det_out.html', emp_id_output=emp_id, fname=emp_fname, lname=emp_lname, emp_loc_output=emp_loc, emp_pri_skill_output=emp_pri_skill, emp_img=object_url)
+            return render_template('empData.html', emp_id_output=emp_id, fname=emp_fname, lname=emp_lname, emp_loc_output=emp_loc, emp_pri_skill_output=emp_pri_skill, emp_img=object_url)
     else:
         cursor.close()
         return("No User Have Been Found")
