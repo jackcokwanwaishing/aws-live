@@ -35,11 +35,11 @@ def addresult():
 
 @app.route("/getemp", methods=['POST'])
 def getresult():
-    return render_template('empData.html')
+    return render_template('findEmp.html')
 
 @app.route("/deleteemp", methods=['POST'])
 def delresult():
-    return render_template('deleteResult.html')
+    return render_template('deleteEmp.html')
 
 
 @app.route("/addResult", methods=['GET','POST'])
