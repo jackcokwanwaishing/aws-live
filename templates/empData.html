@@ -75,7 +75,7 @@
           <form autocomplete="on" method="POST" enctype="multipart/form-data">
               <div class="form-group">
                   <label for="EmployeeID">Employee ID :</label>
-                  {{ id }}
+                  {{ emp_id_output }}
               </div>
               <div class="form-group" style="padding-top:1vw;">
                   <label for="Firstname">First Name :</label>
@@ -87,16 +87,16 @@
               </div>
               <div class="form-group" style="padding-top:1vw;">
                   <label for="PrimSkill">Primary Skill :</label>
-                  {{ interest }}
+                  {{ emp_pri_skill_output }}
               </div>
               <div class="form-group" style="padding-top:1vw;">
                   <label for="Location">Location :</label>
-                  {{ location }}
+                  {{ emp_loc_output }}
               </div>
 
               <div class="form-group" style="padding-top:1vw;">
                   <label for="img">Image :</label>
-                  {{ image_url }}
+                  {{ emp_img }}
               </div>
               <div style="padding-top:1vw;">
               <form action="/" autocomplete="on" method="GET">
