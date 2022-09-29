@@ -160,7 +160,7 @@ def delEmployee():
             cursor.close()
             
         print("all modification done...")
-        return render_template('fire_emp_out.html', name=nameUser)
+        return render_template('deleteEmp.html', name=nameUser)
     else:
         cursor.close()
         return("No User Found")
