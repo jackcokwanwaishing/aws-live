@@ -29,9 +29,13 @@ def home():
 def about():
     return render_template('www.intellipaat.com')
 
-@app.route("/addresult", methods=['POST'])
+# @app.route("/addresult", methods=['POST'])
+# def addresult():
+#     return render_template('addResult.html')
+
+@app.route("/addemp", methods=['POST'])
 def addresult():
-    return render_template('addResult.html')
+    return render_template('AddEmp.html')
 
 @app.route("/getresult", methods=['POST'])
 def getresult():
@@ -42,7 +46,7 @@ def delresult():
     return render_template('deleteResult.html')
 
 
-@app.route("/addemp", methods=['GET','POST'])
+@app.route("/addresult", methods=['GET','POST'])
 def AddEmp():
     emp_id = request.form['emp_id']
     first_name = request.form['first_name']
